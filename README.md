@@ -1,43 +1,69 @@
-# Project Name
-
-## Introduction
+# Project Title
 
 Brief description of your project.
 
-## Prerequisites
+## Getting Started
 
-Before you begin, ensure you have met the following requirements:
+These instructions will help you set up and run the Cypress tests on your local machine.
 
-- You have installed [Node.js](https://nodejs.org/en/) (v12 or higher).
-- You have a package manager like [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/).
+### Prerequisites
 
-## Installation
+Ensure you have the following software installed:
 
-To clone and set up the project, follow these steps:
+- [Node.js](https://nodejs.org/) (version 12 or later)
+- [npm](https://www.npmjs.com/get-npm) (comes with Node.js)
 
-1. **Clone the repository**
+### Installation
 
-   ```bash
-   git clone {LINK}
+1. Clone the repository to your local machine:
 
-2. Install dependencies
+    ```bash
+    git clone https://github.com/your-username/your-repo-name.git
+    ```
 
-If you are using npm:
-npm install
+2. Navigate to the project directory:
 
-Or if you are using yarn:
-yarn install
+    ```bash
+    cd your-repo-name
+    ```
 
-3. Running Cypress Tests
-To run the Cypress tests, follow these steps:
+3. Install the project dependencies:
 
-Open Cypress Test Runner
+    ```bash
+    npm install
+    ```
 
-If you want to run the tests in the Cypress Test Runner UI:
-npx cypress open
+### Running the Cypress Tests
 
-Then, in the Cypress Test Runner, click on the canvas.cy.js file to run the tests.
-Run Cypress Tests in Headless Mode
+1. Open the Cypress Test Runner:
 
-If you prefer to run the tests in headless mode (in the terminal):
-npx cypress run --spec "cypress/e2e/canvas.cy.js"
+    ```bash
+    npx cypress open
+    ```
+
+2. In the Cypress Test Runner, click on `canvas.cy.js` to run the test.
+
+Alternatively, you can run the tests in headless mode (without the GUI):
+
+    ```bash
+    npx cypress run --spec "cypress/e2e/canvas.cy.js"
+    ```
+
+### Project Structure
+
+Briefly describe the project structure if necessary. For example:
+
+```cypressTest
+creatinglyCypressTest/
+├── cypress/
+│   ├── e2e/
+│   │   └── canvas.cy.js
+│   ├── fixtures/
+│   ├── plugins/
+│   └── support/
+├── node_modules/
+├── .gitignore
+├── cypress.config.js
+├── package-lock.json
+├── package.json
+└── README.md
